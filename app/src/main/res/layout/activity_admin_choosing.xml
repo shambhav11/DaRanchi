@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminChoosingActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/clinics"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#FCEFDF"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edit_clinics"
+        android:text="Add Clinic/Hospital"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/edit_clinics"
+        app:layout_constraintTop_toBottomOf="@id/clinics"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/doctor"
+        android:background="#FCEFDF"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="Edit Clinics/Hospital"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/doctor"
+        app:layout_constraintTop_toBottomOf="@id/edit_clinics"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edit_doctor"
+        android:background="#FCEFDF"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="Add Doctor"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/edit_doctor"
+        app:layout_constraintTop_toBottomOf="@id/doctor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/patient"
+        android:background="#FCEFDF"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="Edit Data of Doctor"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/patient"
+        app:layout_constraintTop_toBottomOf="@id/edit_doctor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/edit_patient"
+        android:background="#FCEFDF"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="Add a visit of New Patient"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/edit_patient"
+        app:layout_constraintTop_toBottomOf="@id/patient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/add_user"
+        android:background="#FCEFDF"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="Add visits of a Patient/Delete Patient"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/add_user"
+        app:layout_constraintTop_toBottomOf="@id/edit_patient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#FCEFDF"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="Add user of App"
+        android:layout_height="wrap_content" />
+
+
+</android.support.constraint.ConstraintLayout>

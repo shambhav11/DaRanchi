@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1058229938165",
+    "firebase_url": "https://pndt-ranchi.firebaseio.com",
+    "project_id": "pndt-ranchi",
+    "storage_bucket": "pndt-ranchi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058229938165:android:bcf3855e68ff95e8",
+        "android_client_info": {
+          "package_name": "com.speedofy.app.daranchi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058229938165-rofden563v7qvu405iot16cc3o0rmcd2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.speedofy.app.daranchi",
+            "certificate_hash": "127fc0dbc1117bebc1ab7376783f9cde987e5905"
+          }
+        },
+        {
+          "client_id": "1058229938165-b3jhscjhfcifdmoau7qcdl7goom3ivhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_w6ENv-MFlXT3qqQNj2O5HlqBf9_3LHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058229938165-b3jhscjhfcifdmoau7qcdl7goom3ivhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

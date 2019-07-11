@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f5f2d0"
+    android:layout_height="match_parent"
+    tools:context=".EditingClinicActivity">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditingClinicActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:id="@+id/name_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Name of Clinic:"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/name_text"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/name_edittext"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:hint="Name of Clinic:"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/name_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/applicant_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Name of Applicant:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/applicant_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/applicant_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Name of Applicant:"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/applicant_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/contact_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Contact Number:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/contact_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/contact_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Contact Number"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/contact_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/address_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Address:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/address_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/address_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Address"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/address_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/expiry_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Date of Expiry:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/expiry_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/expiry_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Date of Expiry"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/expiry_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/issue_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Date of Issue:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/issue_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/issue_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Date of Issue"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/issue_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/doctor_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Details of Doctor Operating (One in a line)"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext1"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext2"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext3"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext4"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext5"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext6"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext7"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext7"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext8"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext8"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext9"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext9"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/doctor_edittext10"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Doctor"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/doctor_edittext10"
+        android:layout_margin="10dp"
+        android:id="@+id/file_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="File Number:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/file_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/file_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="File Number"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/file_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/registration_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Registration Number:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/registration_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/registration_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Registration Number"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/registration_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/outcome_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Outcome of Application"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/outcome_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/outcome_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Outcome of Application"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/outcome_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/missing_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Missing Documents:"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/missing_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/missing_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Missing Documents"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/missing_edittext"
+        android:layout_margin="10dp"
+        android:id="@+id/old_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Details of Old Machine (One in a line):"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext1"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext2"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext3"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext4"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext5"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext6"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext7"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext7"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext8"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext8"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext9"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext9"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/old_edittext10"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Detail of a Machine"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/old_edittext10"
+        android:layout_margin="10dp"
+        android:id="@+id/present_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Details of Present Machines (One in a line)"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_name"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext1"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext2"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext3"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext4"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext5"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext6"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext6"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext7"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext7"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext8"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext8"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext9"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext9"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/present_edittext10"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:hint="Details of a Machine"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext10"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/save_data_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        android:text="Save Data "
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/present_edittext10"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:id="@+id/delete_clinic"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:text="Delete Clinic "
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

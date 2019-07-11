@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f5f2d0"
+    android:layout_height="match_parent"
+    tools:context=".EditingDoctorActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EditingDoctorActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"
+            android:id="@+id/name_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="15sp"
+            android:text="Name of Doctor:(Don't use . )"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/name_text"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/name_edittext"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:hint="Name of Doctor:"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/name_edittext"
+            android:layout_margin="10dp"
+            android:id="@+id/clinic_text"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="15sp"
+            android:text="Present Clinic:"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/clinic_text"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:id="@+id/clinic_edittext"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="15sp"
+            android:hint="Present Clinic:"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/clinic_edittext"
+            android:layout_margin="10dp"
+            android:id="@+id/contact_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="15sp"
+            android:text="Contact Number"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/contact_name"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:id="@+id/contact_edittext"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="15sp"
+            android:hint="Contact Number"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/contact_edittext"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:id="@+id/save_data_button"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="15sp"
+            android:text="Save Data "
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/contact_edittext"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:id="@+id/delete_doctor"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="15sp"
+            android:text="Delete Doctor "
+            android:layout_height="wrap_content" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

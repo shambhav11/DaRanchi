@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.speedofy.app.daranchi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ClinicAdminPanel"></activity>
+        <activity android:name=".ClinicLoginActivity" />
+        <activity android:name=".LoginChooseActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserAddActivity" />
+        <activity android:name=".MainLoginActivity">
+
+        </activity>
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".EditingPatientActivity" />
+        <activity android:name=".EditingDoctorActivity" />
+        <activity android:name=".EditingClinicActivity" />
+        <activity android:name=".AdminChoosingActivity" />
+        <activity android:name=".PatientActivity" />
+        <activity android:name=".DoctorActivity" />
+        <activity android:name=".ClinicActivity" />
+        <activity android:name=".PagerStripActivity" />
+        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".ChoosingActivity" />
+    </application>
+
+</manifest>
